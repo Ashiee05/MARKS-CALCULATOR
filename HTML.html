@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Input</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>2022R SVCE Marks Calculator</h1>
+    </header>
+    <div class="section">
+        <h2>Theory</h2>
+        <form id="theorymarksForm">
+            <label for="theoryFAT1">FAT 1:</label>
+            <input type="number" id="theoryFAT1" name="FAT1" min="0" max="50" required>
+            <label for="theoryAssignment1">Assignment 1:</label>
+            <input type="number" id="theoryAssignment1" name="Assignment1" min="0" max="50" required>
+            <label for="theoryFAT2">FAT 2:</label>
+            <input type="number" id="theoryFAT2" name="FAT2" min="0" max="50" required>
+            <label for="theoryAssignment2">Assignment 2:</label>
+            <input type="number" id="theoryAssignment2" name="Assignment2" min="0" max="50"  required>
+            <label for="theoryFAT3">FAT 3:</label>
+            <input type="number" id="theoryFAT3" name="FAT3" min="0" max="50" required>
+            <label for="theoryAssignment3">Assignment 3:</label>
+            <input type="number" id="theoryAssignment3" name="Assignment3" min="0" max="50" required>
+            <label for="theoryExternalMarks">External Marks:</label>
+            <input type="number" id="theoryExternalMarks" name="ExternalMarks" min="0" max="100" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="theoryresults">
+            <p id="theoryInternalResult"></p>
+            <p id="theoryTotalResult"></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Laboratory</h3>
+        <form id="laboratorymarksForm">
+            <label for="labFAT1">FAT 1:</label>
+            <input type="number" id="labFAT1" name="FAT1" min="0" max="50"  required>
+            <label for="labFAT2">FAT 2:</label>
+            <input type="number" id="labFAT2" name="FAT2" min="0" max="50" required>
+            <label for="labFAT3">FAT 3:</label>
+            <input type="number" id="labFAT3" name="FAT3" min="0" max="50" required>
+            <label for="labModelMarks">Model Marks:</label>
+            <input type="number" id="labModelMarks" name="ModelMarks" min="0" max="100" required>
+            <label for="labExternalMarks">External Marks:</label>
+            <input type="number" id="labExternalMarks" name="ExternalMarks" min="0" max="100"  required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="laboratoryresults">
+            <p id="labInternalResult"></p>
+            <p id="labTotalResult"></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Theory cum Laboratory</h3>
+        <form id="theorycumlaboratorymarksForm">
+            <label for="comboFAT1">FAT 1:</label>
+            <input type="number" id="comboFAT1" name="FAT1" min="0" max="50" required>
+            <label for="comboAssignment1">Assignment 1:</label>
+            <input type="number" id="comboAssignment1" name="Assignment1" min="0" max="50"  required>
+            <label for="comboFAT2">FAT 2:</label>
+            <input type="number" id="comboFAT2" name="FAT2" min="0" max="50"  required>
+            <label for="comboAssignment2">Assignment 2:</label>
+            <input type="number" id="comboAssignment2" name="Assignment2" min="0" max="50"  required>
+            <label for="comboModelMarks">Model Marks:</label>
+            <input type="number" id="comboModelMarks" name="ModelMarks" min="0" max="50" required>
+            <label for="comboExternaltheoryMarks">External Theory Marks:</label>
+            <input type="number" id="comboExternaltheoryMarks" name="ExternaltheoryMarks" min="0" max="60"  required>
+            <label for="comboExternallabMarks">External Practical Marks:</label>
+            <input type="number" id="comboExternallabMarks" name="ExternallabMarks" min="0" max="40"  required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="theorycumlaboratoryresults">
+            <p id="comboInternalResult"></p>
+            <p id="comboTotalResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
