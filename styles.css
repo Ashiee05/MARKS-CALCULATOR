@@ -1,0 +1,113 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    background: url("college.jpg") no-repeat center center;
+    background-size:cover;
+    background-blend-mode:color-burn;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 3rem;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    width: 80%;
+    text-align: center;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: ridge;
+    border-bottom-color: #ff0000;
+    position: absolute;
+    top: 0;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-style: ridge;
+    border-top-color: #ff0000;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    
+}
+
+
+.section h2, .section h3 {
+    font-size:large;
+    font-weight: bold;
+    color:#000000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+    border-style: double;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form input {
+    padding: 0.5rem;
+    border: 1px solid #ff0000;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    background-color: rgb(0, 239, 0);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    border-style: outset;
+}
+
+form button:hover {
+    background-color: #ff0000;
+}
+#theoryresults, #laboratoryresults, #theorycumlaboratoryresults{
+    margin-top: 1rem;
+    color: white;
+    padding: 0rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: larger;
+    border-style:none;
+    transition: border-style 0.3s;
+}
+
+.results-open {
+    border-style: outset !important;
+}
+
+#theoryInternalResult, #theoryTotalResult, #labInternalResult, #labTotalResult, #comboInternalResult, #comboTotalResult {
+    margin: 0.5rem 0;
+}
